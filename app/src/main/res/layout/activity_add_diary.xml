@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time1"
+        android:layout_marginTop="3dp"
+        android:layout_weight="3" />
+
+    <Button
+        android:id="@+id/phtoto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/phtoto"/>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ok"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:id="@+id/tit"
+        android:layout_below="@+id/time1"
+        />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:layout_below="@+id/tit"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/con"
+        android:text="内容" />
+
+    <com.example.everydayis.activity.MyEditText
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/con"
+        android:gravity="top"
+        android:lines="100" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/con"
+        android:id="@+id/img"
+        />
+
+</RelativeLayout>

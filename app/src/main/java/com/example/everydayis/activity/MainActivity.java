@@ -1,5 +1,9 @@
 package com.example.everydayis.activity;
-
+/**
+ * DESC:
+ * Author:七月无雨
+ * Data:文章
+ **/
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
@@ -23,14 +27,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
 import com.example.everydayis.R;
 import com.example.everydayis.utils.HttpUtils;
 import com.example.everydayis.utils.StreamUtils;
-
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -40,10 +41,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
-
 @RequiresApi(api = Build.VERSION_CODES.M)
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnScrollChangeListener {
-
     private TextView tv_title, tv_author, tv_wc;
     private WebView wv;
     //定义WebView内容两边对齐样式
@@ -52,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private RadioButton rb_random, rb_curr, rb_next, rb_prev, rb_set;
     private String prev, next, curr;
     private RelativeLayout rl;
-    private boolean mBackKeyPressed = false;//记录是否有首次按键
     private Dialog dialog;
     private View inflate, v_x;
     private JSONObject obj, obj2;
@@ -61,7 +59,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int bg;
     private LinearLayout ll;
     private ToggleButton tb;
-
     private String data;
     private final static int TIME_OUT = 1000;//超时时间
     @SuppressLint("HandlerLeak")
@@ -125,7 +122,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
         initData();
     }
-
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void initView() {
         //获取控件
@@ -379,21 +375,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    //点击两次退出程序
-    public void onBackPressed() {
-        if (!mBackKeyPressed) {
-            Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
-            mBackKeyPressed = true;
-            new Timer().schedule(new TimerTask() {//延时两秒，如果超出则清除第一次记录
-
-                @Override
-                public void run() {
-                    mBackKeyPressed = false;
-                }
-            }, 2000);
-        } else {
-            //结束Activity
-            finish();
-        }
-    }
+//    //点击两次退出程序
+//    public void onBackPressed() {
+//        if (!mBackKeyPressed) {
+//            Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+//            mBackKeyPressed = true;
+//            new Timer().schedule(new TimerTask() {//延时两秒，如果超出则清除第一次记录
+//
+//                @Override
+//                public void run() {
+//                    mBackKeyPressed = false;
+//                }
+//            }, 2000);
+//        } else {
+//            //结束Activity
+//            finish();
+//        }
+//    }
 }

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.menutest.MainActivity"
+    >
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:title="查看随笔"/>
+</menu>

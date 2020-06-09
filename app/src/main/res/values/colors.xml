@@ -3,7 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite">#FFFFFF</color>
     <color name="colorLightGray">#eeeeee</color>
     <color name="colorGray">#bdbdbd</color>
     <color name="colorBlack">#080808</color>
@@ -12,4 +12,5 @@
     <color name="colorOrange">#DCC69D</color>
     <color name="colorPink">#FAE2E0</color>
     <color name="colorNight">#313639</color>
+    <color name="list">#F1F1EB</color>
 </resources>

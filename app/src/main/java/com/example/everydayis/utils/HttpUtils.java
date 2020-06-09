@@ -1,5 +1,4 @@
 package com.example.everydayis.utils;
-
 /**
  * 接口头的提取
  */

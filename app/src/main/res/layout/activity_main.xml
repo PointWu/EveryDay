@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
@@ -110,6 +106,7 @@
             android:text="后一天"
             android:textSize="10sp" />
 
+
         <RadioButton
             android:id="@+id/rb_random"
             android:layout_width="0dp"
@@ -120,5 +117,7 @@
             android:gravity="center"
             android:text="随机"
             android:textSize="10sp" />
+
+
     </RadioGroup>
 </LinearLayout>
